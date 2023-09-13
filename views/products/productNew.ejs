@@ -1,0 +1,25 @@
+<%- include('../partials/head') %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <%- include('../partials/nav') %>
+
+    <h1>New Product</h1>
+
+    <form action="/products" method="post">
+        <input type="text" name="name" id="name" placeholder="product name">
+        <input type="number" step="0.01" name="price" id="price" placeholder="product price">
+        <select name="category" id="category">
+            <% for (let schemaCategory of schemaCategories) { %>
+                <option value="<%= schemaCategory %>"><%= schemaCategory %></option>
+            <% } %>
+        </select>
+        <button type="submit">Create Product</button>    
+    </form>
+
+</body>
+<% include('../partials/footer') %>
+
+</html>

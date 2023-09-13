@@ -1,0 +1,20 @@
+<%- include('../partials/head') %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <%- include('../partials/nav') %>
+
+    <h1>Product <%= product.name %></h1>
+    <p>Price: <%= product.price %></p>
+    <p>Tags: <%= product.category %></p>
+    <a href="/products/<%= product._id %>/edit">Edit</a>
+    <form action="/products/<%= product._id %>?_method=DELETE" method="post">
+        <button type="submit">Delete</button>
+    </form>
+
+</body>
+<% include('../partials/footer') %>
+
+</html>
