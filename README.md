@@ -2,6 +2,8 @@
 - 1st express CRUD app using MongoDB (via Mongoose)
 - [based on respective tutorial by Colt Steele (paid)](https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/22098984)
 
+https://github.com/Sammeeey/mongooseExpress/assets/49591562/797e476e-c6a4-4e93-b8bc-3b30f89e1748
+
 ## lessons learned (Building Node/Express App)
 ### installations
 1. initiate npm project (potentially install requirements): `npm init -y`
